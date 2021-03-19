@@ -1,3 +1,15 @@
+'''
+Changelog generator for CompMod
+
+Reads docs-data/*.docugen files and compares the entries to previously known entries in docugen.db
+
+To generate changelogs:
+python3 docugen.py gen [vanilla_build] [compmod_revision]
+
+e.g.
+python3 docugen.py gen 336 17
+'''
+
 import argparse
 from docugen import generator, database, file_scanner, verbose
 
