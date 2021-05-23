@@ -33,9 +33,9 @@ kTunnelExitCost = 8
 kHealingClampMaxHPAmount = 0.12
 kHealingClampReductionScalar = 0.20
 
-kSpikeDamage = 6
-kSpikeSpread = Math.Radians(3.8)
-kSpikeSize = 0.045
+kSpikeDamage = 7
+kSpikeSpread = Math.Radians(4.0)
+kSpikeSize = 0.030
 
 kUmbraResearchCost = 30 --20
 kUmbraResearchTime = 105 -- 45

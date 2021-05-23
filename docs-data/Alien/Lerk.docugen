@@ -9,9 +9,9 @@ This change minimizes the effectiveness of silent Lerk ambushes. A lerk will hav
 Lerk movement mid-flight while flapping often is unaffected
 
 #Alien.Lerk.Spikes
-Damage increased to 6 from 5 (to 12 from 10 to players)
-Spread increased to 3.8 degrees from 3.6 degrees
-Size reduced to 45mm from 60mm
+Damage increased to 7 from 5 (to 12 from 10 to players)
+Spread increased to 4.0 degrees from 3.6 degrees
+Size reduced to 30mm from 60mm
 
 #Alien.Lerk.Spores
 Research changed to Biomass 6 from Biomass 5
