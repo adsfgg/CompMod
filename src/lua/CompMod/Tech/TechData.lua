@@ -123,7 +123,7 @@ local function GetTechToRemove()
 
         [kTechId.Stab] = true,
 
-        [kTechId.Carapace] = true,
+        -- [kTechId.Carapace] = true,
         [kTechId.Focus] = true
     }
 end

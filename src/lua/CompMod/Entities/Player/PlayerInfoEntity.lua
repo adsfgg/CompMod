@@ -8,7 +8,7 @@ local techUpgradesTable =
     kTechId.Mine,
 
     kTechId.Vampirism,
-    -- kTechId.Carapace,
+    kTechId.Carapace,
     kTechId.Regeneration,
 
     kTechId.Aura,
