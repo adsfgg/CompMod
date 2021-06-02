@@ -21,9 +21,9 @@ function Alien:UpdateAutoHeal()
             healRate = healRate * modifier
         end
 
-        -- self:AddHealth(healRate, false, false, not hasRegenUpgrade, self, true)
+        self:AddHealth(healRate, false, false, not hasRegenUpgrade, self, true)
         -- Disable sound for all autoheal, not just innate
-        self:AddHealth(healRate, false, false, true, self, true)
+        -- self:AddHealth(healRate, false, false, true, self, true)
         self.timeLastAlienAutoHeal = Shared.GetTime()
     end
 end
