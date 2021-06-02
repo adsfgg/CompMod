@@ -30,3 +30,28 @@ end
 function Onos:GetMaxShieldAmount()
     return math.floor(math.min(self:GetBaseHealth() * kOnosMucousShieldPercent, kMucousShieldMaxAmount))
 end
+
+local oldUpdateRumbleSound = Onos.UpdateRumbleSound
+function Onos:UpdateRumbleSound()
+    oldUpdateRumbleSound(self)
+
+    if Server then
+        if GetHasStealthUpgrade(self) then
+            self.rumbleSound:SetVolume(1 - (kStealthVolumeReduction / 3 * self.stealthLevel))
+        else
+            self.rumbleSound:SetVolume(1)
+        end
+    end
+end
+
+
+local paramLookup = {
+    kEffectFilterStealthLevelOne,
+    kEffectFilterStealthLevelTwo,
+    kEffectFilterStealthLevelThree,
+}
+function Onos:GetEffectParams(tableParams)
+    if self.stealthLevel > 0 then
+        tableParams[paramLookup[self.stealthLevel]] = true
+    end
+end

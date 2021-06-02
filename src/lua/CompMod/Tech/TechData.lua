@@ -12,11 +12,11 @@ local function GetTechToAdd()
         },
 
         {
-            [kTechDataId] = kTechId.Neurotoxin,
+            [kTechDataId] = kTechId.Stealth,
             [kTechDataCategory] = kTechId.ShadeHive,
-            [kTechDataDisplayName] = "Neurotoxin", -- TODO: Use locale
+            [kTechDataDisplayName] = "Stealth", -- TODO: Use locale
             [kTechDataSponitorCode] = "N",
-            [kTechDataTooltipInfo] = "Each hit inflicts a poison toxin, hurting Marines over time",
+            [kTechDataTooltipInfo] = "Increases sneak speed and reduces volume of lifeforms",
             [kTechDataCostKey] = 0,
         },
         

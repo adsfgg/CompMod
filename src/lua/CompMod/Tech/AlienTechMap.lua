@@ -60,7 +60,7 @@ kAlienTechMap =
     { kTechId.Adrenaline, 5, 5 },
 
     -- { kTechId.Focus, 6, 5 },
-    { kTechId.Neurotoxin, 6, 5},
+    { kTechId.Stealth, 6, 5},
     { kTechId.Camouflage, 7, 5 },
     { kTechId.Aura, 8, 5 },
 

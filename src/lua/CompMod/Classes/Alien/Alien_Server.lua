@@ -31,3 +31,17 @@ end
 function Alien:GetCanVampirismBeUsedOn()
     return false
 end
+
+local oldOnProcessMove = Alien.OnProcessMove
+function Alien:OnProcessMove(input)
+    oldOnProcessMove(self, input)
+    self:UpdateStealthLevel()
+end
+
+function Alien:UpdateStealthLevel()
+    if GetHasStealthUpgrade(self) then
+        self.stealthLevel = self:GetVeilLevel()
+    else
+        self.stealthLevel = 0
+    end
+end

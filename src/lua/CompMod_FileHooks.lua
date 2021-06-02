@@ -7,6 +7,7 @@ ModLoader.SetupFileHook("lua/AlienBuy_Client.lua", "lua/CompMod/Buy/Alien/AlienB
 -- Alien Classes
 ModLoader.SetupFileHook("lua/Alien_Client.lua", "lua/CompMod/Classes/Alien/Alien_Client.lua", "post")
 ModLoader.SetupFileHook("lua/Alien_Server.lua", "lua/CompMod/Classes/Alien/Alien_Server.lua", "post")
+ModLoader.SetupFileHook("lua/Alien.lua", "lua/CompMod/Classes/Alien/Alien.lua", "post")
 ModLoader.SetupFileHook("lua/Embryo.lua", "lua/CompMod/Classes/Alien/Embryo.lua", "post")
 ModLoader.SetupFileHook("lua/Fade_Server.lua", "lua/CompMod/Classes/Alien/Fade_Server.lua", "post")
 ModLoader.SetupFileHook("lua/Fade.lua", "lua/CompMod/Classes/Alien/Fade.lua", "post")
@@ -34,6 +35,10 @@ ModLoader.SetupFileHook("lua/MapEntityLoader.lua", "lua/CompMod/core/MapEntityLo
 
 -- Damage Files
 ModLoader.SetupFileHook("lua/DamageTypes.lua", "lua/CompMod/Damage/DamageTypes.lua", "post")
+
+-- Effects
+ModLoader.SetupFileHook("lua/EffectsGlobals.lua", "lua/CompMod/Effects/EffectsGlobals.lua", "post")
+ModLoader.SetupFileHook("lua/PlayerEffects.lua", "lua/CompMod/Effects/PlayerEffects.lua", "post")
 
 -- Alien Entities
 ModLoader.SetupFileHook("lua/AlienTeamInfo.lua", "lua/CompMod/Entities/Alien/AlienTeamInfo.lua", "post")
@@ -132,16 +137,14 @@ ModLoader.SetupFileHook("lua/Hallucination.lua", "lua/CompMod/Units/Alien/Halluc
 -- Marine Units
 ModLoader.SetupFileHook("lua/MAC.lua", "lua/CompMod/Units/Marine/MAC.lua", "post")
 
+-- Upgrades
+ModLoader.SetupFileHook("lua/Alien_Upgrade.lua", "lua/CompMod/Upgrades/Alien_Upgrade.lua", "post")
+
 -- Alien Weapons
-ModLoader.SetupFileHook("lua/Weapons/Alien/Ability.lua", "lua/CompMod/Weapons/Alien/Ability.lua", "post")
-ModLoader.SetupFileHook("lua/Weapons/Alien/BiteLeap.lua", "lua/CompMod/Weapons/Alien/BiteLeap.lua", "post")
 ModLoader.SetupFileHook("lua/Weapons/Alien/BoneShield.lua", "lua/CompMod/Weapons/Alien/BoneShield.lua", "post")
 ModLoader.SetupFileHook("lua/Weapons/Alien/DropStructureAbility.lua", "lua/CompMod/Weapons/Alien/DropStructureAbility.lua", "post")
-ModLoader.SetupFileHook("lua/Weapons/Alien/Gore.lua", "lua/CompMod/Weapons/Alien/Gore.lua", "post")
-ModLoader.SetupFileHook("lua/Weapons/Alien/LerkBite.lua", "lua/CompMod/Weapons/Alien/LerkBite.lua", "post")
-ModLoader.SetupFileHook("lua/Weapons/Alien/Spit.lua", "lua/CompMod/Weapons/Alien/Spit.lua", "post")
+ModLoader.SetupFileHook("lua/Weapons/Alien/Metabolize.lua", "lua/CompMod/Weapons/Alien/Metabolize.lua", "post")
 ModLoader.SetupFileHook("lua/Weapons/Alien/SpitSpray.lua", "lua/CompMod/Weapons/Alien/SpitSpray.lua", "post")
-ModLoader.SetupFileHook("lua/Weapons/Alien/StabBlink.lua", "lua/CompMod/Weapons/Alien/StabBlink.lua", "post")
 ModLoader.SetupFileHook("lua/Weapons/Alien/SwipeBlink.lua", "lua/CompMod/Weapons/Alien/SwipeBlink.lua", "post")
 ModLoader.SetupFileHook("lua/Weapons/Alien/Web.lua", "lua/CompMod/Weapons/Alien/Web.lua", "post")
 

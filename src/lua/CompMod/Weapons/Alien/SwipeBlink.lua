@@ -6,11 +6,3 @@ function SwipeBlink:GetDeathIconIndex()
         return kDeathMessageIcon.Swipe
     end
 end
-
-function SwipeBlink:GetIsAffectedByNeurotoxin()
-    return self.primaryAttacking
-end
-
-function SwipeBlink:GetNeurotoxinTickDamage()
-    return kFadeNeurotoxinDamage
-end
