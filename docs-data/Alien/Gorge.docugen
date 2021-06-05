@@ -9,6 +9,9 @@ Research changed to Biomass 2 from Biomass 3
 #Alien.Gorge.Health
 Increased Gorge health to 190 from 160
 
+#Alien.Gorge.Hydra
+Lowered number of Hydras per Gorge to 2 from 3
+
 #Alien.Gorge.Spit
 Increased Gorge spit speed to 43 from 35
 
@@ -19,3 +22,4 @@ Gorges can now drop tunnels for 4 pres
 HP gain per charge to 5 from 10
 Web charges lowered to 0 from 3
 Webbed duration lowered to 2.5 seconds from 5 seconds
+Lowered number of Webs per Gorge to 2 from 3

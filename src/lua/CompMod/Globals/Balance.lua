@@ -164,3 +164,6 @@ kStealthSneakModifier = 0.3
 kStealthVolumeReduction = 1.0 -- IMPORTANT: Make sure this is the same as in PlayerEffects.lua
 
 kInfantryPortalSupply = 10 --0 
+
+kHydrasPerHive = 2 -- 3
+kNumWebsPerGorge = 2 -- 3
