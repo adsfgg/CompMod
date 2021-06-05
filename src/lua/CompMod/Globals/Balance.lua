@@ -16,8 +16,8 @@ kDrifterDetectRange = 5
 kEnzymeCloudAbilityCooldown = 1
 
 kAdvancedSwipeDamageScalar = 1.08
-kAdvancedSwipeResearchTime = 60
-kAdvancedSwipeCost = 25
+kAdvancedSwipeResearchTime = 75
+kAdvancedSwipeCost = 30
 
 kBabblerHealth = 11 -- 12
 
@@ -164,3 +164,5 @@ kGorgeArmorFullyUpgradedAmount = kGorgeArmor + 20 --25
 kLerkArmorFullyUpgradedAmount = kLerkArmor + 15 --20
 kFadeArmorFullyUpgradedAmount = kFadeArmor + 40 --40
 kOnosArmorFullyUpgradedAmount = kOnosArmor + 80 --200
+
+kMetabolizeEnergyCost = 20 --25

@@ -2,10 +2,14 @@
 Replaces Stab
 Upgrades the normal swipe damage to 81 from 75
 Can be researched at Biomass 7
-Costs 25 tres and takes 60 seconds to research
+Costs 30 tres and takes 75 seconds to research
 
 #Alien.Fade.Blink
 Lowered Blink energy cost to 12 from 14
+
+#Alien.Fade.Metabolize
+Lowered Energy cost to 20 from 25
+Lowered delay between Metabolize and Swipe to 0.45 seconds from 0.65 seconds
 
 #Alien.Fade.Swipe
 Tweaked damage

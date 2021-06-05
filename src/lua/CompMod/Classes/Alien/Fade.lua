@@ -1,4 +1,7 @@
-Fade.kMetabolizeAnimationDelay = 0.65
+-- local kAnimationGraphSpeed = 1.70
+-- Fade.kMetabolizeAnimationDelay = Shared.GetAnimationLength("models/alien/fade/fade_view.model", "vortex") / kAnimationGraphSpeed --0.65
+
+Fade.kMetabolizeAnimationDelay = 0.45 --0.65
 
 function Fade:GetMaxShieldAmount()
     return math.floor(math.min(self:GetBaseHealth() * kFadeMucousShieldPercent, kMucousShieldMaxAmount))
