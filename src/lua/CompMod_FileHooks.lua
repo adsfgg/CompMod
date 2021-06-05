@@ -19,6 +19,7 @@ ModLoader.SetupFileHook("lua/Skulk.lua", "lua/CompMod/Classes/Alien/Skulk.lua", 
 ModLoader.SetupFileHook("lua/Commander_Client.lua", "lua/CompMod/Classes/Commander/Commander_Client.lua", "post")
 -- Marine Classes
 ModLoader.SetupFileHook("lua/Exo.lua", "lua/CompMod/Classes/Marine/Exo.lua", "post")
+ModLoader.SetupFileHook("lua/Marine_Server.lua", "lua/CompMod/Classes/Marine/Marine_Server.lua", "post")
 ModLoader.SetupFileHook("lua/Marine.lua", "lua/CompMod/Classes/Marine/Marine.lua", "post")
 -- Player Classes
 ModLoader.SetupFileHook("lua/Player_Client.lua", "lua/CompMod/Classes/Player/Player_Client.lua", "post")
@@ -150,6 +151,7 @@ ModLoader.SetupFileHook("lua/Weapons/Alien/Web.lua", "lua/CompMod/Weapons/Alien/
 
 -- Marine Weapons
 ModLoader.SetupFileHook("lua/Weapons/Marine/Flame.lua", "lua/CompMod/Weapons/Marine/Flame.lua", "post")
+ModLoader.SetupFileHook("lua/Weapons/Marine/Rifle.lua", "lua/CompMod/Weapons/Marine/Rifle.lua", "post")
 ModLoader.SetupFileHook("lua/Weapons/Marine/Shotgun.lua", "lua/CompMod/Weapons/Marine/Shotgun.lua", "post")
 -- Shared Weapons
 ModLoader.SetupFileHook("lua/Weapons/DotMarker.lua", "lua/CompMod/Weapons/DotMarker.lua", "post")

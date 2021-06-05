@@ -10,9 +10,17 @@ Reduced damage to 7 from 8
 Lowered spread to 3.2 degrees from 4 degrees
 Increased structure damage multiplier to 1.25x from 1.0x
 
+#Marine.Weapons.Rifle
+Starting ammo now tied to Weapons upgrade level
+>W0 = 50/100
+>W1 = 50/150
+>W2 = 50/200
+>W3 = 50/200
+
 #Marine.Weapons.Shotgun
 Damage
->Increase Shotgun damage per weapon upgrade to ~13.33 from ~10
+>Increased Shotgun damage per weapon upgrade to ~13.33 from ~10
+>Increased base Shotgun damage by 10 damage. ~10.6 damage per pellet from 10 damage per pellet
 Falloff
 >Falloff start distance increased to 10m from 5m
 >Falloff end distance increased to 20m from 15m
