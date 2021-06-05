@@ -1,11 +1,3 @@
-function SpitSpray:GetIsAffectedByNeurotoxin()
-    return self.primaryAttacking
-end
-
-function SpitSpray:GetNeurotoxinTickDamage()
-    return kGorgeNeurotoxinDamage
-end
-
 -- Fix vanilla bug: Use the kSpitSpeed value from Balance.lua
 -- local kSpitSpeed = 35
 

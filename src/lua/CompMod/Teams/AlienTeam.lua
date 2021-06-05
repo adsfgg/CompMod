@@ -11,7 +11,7 @@ local kUpgradeStructureTable =
         name = "Veil",
         techId = kTechId.Veil,
         upgrades = {
-            kTechId.Camouflage, kTechId.Aura, kTechId.Neurotoxin
+            kTechId.Camouflage, kTechId.Aura, kTechId.Stealth
         }
     },
     {
@@ -171,7 +171,7 @@ function AlienTeam:InitTechTree()
     self.techTree:AddBuyNode(kTechId.Regeneration, kTechId.Shell, kTechId.None, kTechId.AllAliens)
 
     -- self.techTree:AddBuyNode(kTechId.Focus, kTechId.Veil, kTechId.None, kTechId.AllAliens)
-    self.techTree:AddBuyNode(kTechId.Neurotoxin, kTechId.Veil, kTechId.None, kTechId.AllAliens)
+    self.techTree:AddBuyNode(kTechId.Stealth, kTechId.Veil, kTechId.None, kTechId.AllAliens)
     self.techTree:AddBuyNode(kTechId.Aura, kTechId.Veil, kTechId.None, kTechId.AllAliens)
     self.techTree:AddBuyNode(kTechId.Camouflage, kTechId.Veil, kTechId.None, kTechId.AllAliens)
 

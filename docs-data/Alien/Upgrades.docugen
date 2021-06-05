@@ -14,17 +14,12 @@ Lowered Gorge carapace armour to 20 from 25
 Lowered Lerk carapace armour to 15 from 20
 Lowered Onos carapace armour to 80 from 200
 
-#Alien.Upgrades.Neurotoxin
+#Alien.Upgrades.Stealth
 Replaces Focus
-All Alien primary attacks will inflict a poison toxin, hurting Marines over time
-Damage will tick once every second
-Duration will be 1 second per Veil
-Damage Values:
->Skulk: 7
->Gorge: 6
->Lerk: 5
->Fade: 9
->Onos: 7
+Skulk/Gorge sneak speed increased 
+Silences Lerk glide sound
+Reduces volume of Onos moving without Charge
+Reduces volume of Fade metabolize
 
 #Alien.Upgrades.Regeneration
 Reduced from 8% per tick to 6% per tick

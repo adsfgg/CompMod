@@ -63,12 +63,6 @@ kLeapEnergyCost = 55
 
 kAdrenalineAbilityMaxEnergy = kAbilityMaxEnergy
 
-kSkulkNeurotoxinDamage = 7
-kGorgeNeurotoxinDamage = 6
-kLerkNeurotoxinDamage = 5
-kFadeNeurotoxinDamage = 9
-kOnosNeurotoxinDamage = 7
-
 kAlienRegenerationPercentage = 0.06
 kAlienMinRegeneration = 5
 
@@ -166,3 +160,5 @@ kFadeArmorFullyUpgradedAmount = kFadeArmor + 40 --40
 kOnosArmorFullyUpgradedAmount = kOnosArmor + 80 --200
 
 kMetabolizeEnergyCost = 20 --25
+kStealthSneakModifier = 0.3
+kStealthVolumeReduction = 1.0 -- IMPORTANT: Make sure this is the same as in PlayerEffects.lua

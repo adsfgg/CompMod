@@ -10,7 +10,7 @@
 local kIndexToUpgrades =
 {
     { kTechId.Spur, kTechId.Crush, kTechId.Celerity, kTechId.Adrenaline },
-    { kTechId.Veil, kTechId.Camouflage, kTechId.Aura, kTechId.Neurotoxin },
+    { kTechId.Veil, kTechId.Camouflage, kTechId.Aura, kTechId.Stealth },
     { kTechId.Shell, kTechId.Vampirism, kTechId.Carapace, kTechId.Regeneration },
 }
 

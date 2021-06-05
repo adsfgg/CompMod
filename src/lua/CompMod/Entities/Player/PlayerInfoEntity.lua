@@ -12,7 +12,7 @@ local techUpgradesTable =
     kTechId.Regeneration,
 
     kTechId.Aura,
-    kTechId.Neurotoxin,
+    kTechId.Stealth,
     kTechId.Camouflage,
 
     kTechId.Celerity,
