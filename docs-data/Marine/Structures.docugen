@@ -5,6 +5,9 @@ Research time decreased to 45 seconds from 90 seconds
 Now heals Marine armour
 > Heals 15 armour per tick
 
+#Marine.Structures.Infantry Portal
+Increased supply cost to 10 from 0
+
 #Marine.Structures.Observatory
 Changed build time to 10 seconds from 15 seconds
 
