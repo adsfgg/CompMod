@@ -6,6 +6,7 @@ Added new ability Adrenaline Rush to the Shift
 Costs 3 tres
 Duration 5 seconds
 Cooldown 5 seconds
-When active increases range and output time of nearby PvE
+When active increases range, output time and speed of nearby PvE
 >Increases range by 25%
 >Increases output time by 10% (Whips attack 10% faster, Crags heal 10% faster, etc)
+>Increases speed by 1

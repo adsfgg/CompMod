@@ -223,4 +223,14 @@ if Server then
     end
 end
 
+function Shift:GetMaxSpeed()
+    local maxSpeed = Shift.kMoveSpeed
+
+    if self.isAdrenalineRushed then
+        maxSpeed = maxSpeed + kAdrenalineRushSpeedIncrease
+    end
+
+    return maxSpeed
+end
+
 Shared.LinkClassToMap("Shift", Shift.kMapName, networkVars)

@@ -37,4 +37,14 @@ function Whip:OnUpdateAnimationInput(modelMixin)
     modelMixin:SetAnimationInput("adrenalinerush_speed", speed)
 end
 
+function Whip:GetMaxSpeed()
+    local maxSpeed = Whip.kMoveSpeed
+
+    if self.isAdrenalineRushed then
+        maxSpeed = maxSpeed + kAdrenalineRushSpeedIncrease
+    end
+
+    return maxSpeed
+end
+
 Shared.LinkClassToMap("Whip", Whip.kMapName, networkVars, true)

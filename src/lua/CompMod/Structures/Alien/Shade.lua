@@ -32,4 +32,14 @@ if Server then
     end
 end
 
+function Shade:GetMaxSpeed()
+    local maxSpeed = kAlienStructureMoveSpeed
+
+    if self.isAdrenalineRushed then
+        maxSpeed = maxSpeed + kAdrenalineRushSpeedIncrease
+    end
+
+    return maxSpeed
+end
+
 Shared.LinkClassToMap("Shade", Shade.kMapName, networkVars)

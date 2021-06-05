@@ -79,4 +79,14 @@ function Crag:GetHealInterval()
     return interval
 end
 
+function Crag:GetMaxSpeed()
+    local maxSpeed = Crag.kMaxSpeed
+
+    if self.isAdrenalineRushed then
+        maxSpeed = maxSpeed + kAdrenalineRushSpeedIncrease
+    end
+
+    return maxSpeed
+end
+
 Shared.LinkClassToMap("Crag", Crag.kMapName, networkVars)
