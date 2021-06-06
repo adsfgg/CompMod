@@ -1,4 +1,4 @@
-# Changes between CompMod [revision 22](revisions/revision22.md) and Vanilla Build 336
+# Changes between CompMod [revision 23 beta 1](revisions/revision23b1.md) and Vanilla Build 336
 <br/>
 
 # Alien
@@ -10,9 +10,10 @@
   * Costs 3 tres
   * Duration 5 seconds
   * Cooldown 5 seconds
-  * When active increases range and output time of nearby PvE
+  * When active increases range, output time and speed of nearby PvE
     * Increases range by 25%
     * Increases output time by 10% (Whips attack 10% faster, Crags heal 10% faster, etc)
+    * Increases speed by 1
 * ### Bonewall
   * Bonewall is no longer flammable
 
@@ -60,9 +61,12 @@
   * Replaces Stab
   * Upgrades the normal swipe damage to 81 from 75
   * Can be researched at Biomass 7
-  * Costs 25 tres and takes 60 seconds to research
+  * Costs 30 tres and takes 75 seconds to research
 * ### Blink
   * Lowered Blink energy cost to 12 from 14
+* ### Metabolize
+  * Lowered Energy cost to 20 from 25
+  * Lowered delay between Metabolize and Swipe to 0.45 seconds from 0.65 seconds
 * ### Swipe
   * Tweaked damage
     * Swipe damage increased to 75 from 37.5
@@ -78,6 +82,8 @@
   * Research changed to Biomass 2 from Biomass 3
 * ### Health
   * Increased Gorge health to 190 from 160
+* ### Hydra
+  * Lowered number of Hydras per Gorge to 2 from 3
 * ### Spit
   * Increased Gorge spit speed to 43 from 35
 * ### Tunnels
@@ -86,12 +92,15 @@
   * HP gain per charge to 5 from 10
   * Web charges lowered to 0 from 3
   * Webbed duration lowered to 2.5 seconds from 5 seconds
+  * Lowered number of Webs per Gorge to 2 from 3
 
 ## Healing Cap
 * Decreased healing softcap to 12% from 14%
 * Additional healing after soft cap increased to 80% reduction from 66%
 
 ## Lerk
+* ### Glide
+  * The Glide sound effect is now 30x louder (for testing purposes)
 * ### Health
   * Lowered base Lerk health to 170 from 180
 * ### Movement
@@ -101,9 +110,9 @@
   * This change minimizes the effectiveness of silent Lerk ambushes. A lerk will have to flap in order to quickly catch a marine
   * Lerk movement mid-flight while flapping often is unaffected
 * ### Spikes
-  * Damage increased to 6 from 5 (to 12 from 10 to players)
-  * Spread increased to 3.8 degrees from 3.6 degrees
-  * Size reduced to 45mm from 60mm
+  * Damage increased to 7 from 5 (to 14 from 10 to players)
+  * Spread increased to 4.0 degrees from 3.6 degrees
+  * Size reduced to 30mm from 60mm
 * ### Spores
   * Research changed to Biomass 6 from Biomass 5
   * Opacity of cloud lowered by 40%
@@ -129,7 +138,7 @@
 * ### Cyst
   * Build time increased to 6 seconds from 3.33 seconds
   * Shade hive cysts are now visible from further away (to 10 from 6)
-  * Lowered damage bonus from welders to 4x from 7x
+  * Lowered damage bonus from Welders to 5x from 7x
   * Decreased build time on Shift hive by 20%
 * ### Movement
   * Structures will move 10% faster when not under attack
@@ -151,21 +160,22 @@
 * ### Camouflage
   * No longer fully cloaked while moving
 * ### Carapace
-  * Upgrade removed
-* ### Neurotoxin
-  * Replaces Focus
-  * All Alien primary attacks will inflict a poison toxin, hurting Marines over time
-  * Damage will tick once every second
-  * Duration will be 1 second per Veil
-  * Damage Values:
-    * Skulk: 7
-    * Gorge: 6
-    * Lerk: 5
-    * Fade: 9
-    * Onos: 7
+  * Lowered Skulk carapace armour to 10 from 15
+  * Lowered Gorge carapace armour to 20 from 25
+  * Lowered Lerk carapace armour to 15 from 20
+  * Lowered Onos carapace armour to 80 from 200
 * ### Regeneration
-  * Removed heal effect (visual and audio)
-  * Reduced from 8% per tick to 6% per tick
+  * Added per-lifeform Regeneration rates:
+    * Vanilla is 8% per tick for all lifeforms
+    * Lerk: 6% per tick
+    * Fade/Onos/Gorge: 7% per tick
+    * Skulks: 8% per tick
+* ### Stealth
+  * Replaces Focus
+  * Skulk/Gorge sneak speed increased
+  * Silences Lerk glide sound
+  * Reduces volume of Onos moving without Charge
+  * Reduces volume of Fade metabolize
 * ### Vampirism
   * No longer triggers from friendly-fire damage
   * Works against exosuits
@@ -192,6 +202,7 @@
 * Increased drop cost for Commanders to 20 tres from 15 tres
 
 ## MACs
+* Marines start with 1 MAC already on the field
 * Cost reduced to 4 tres from 5 tres
 * MACs will move 15% faster when not under attack
 
@@ -206,6 +217,7 @@
 
 ## Nanoshield
 * Duration on players reduced to 2 seconds from 3 seconds
+* Nanoshield will now weld players/structures at MAC speeds
 
 ## Structures
 * ### AdvancedArmory
@@ -214,6 +226,8 @@
   * Research time decreased to 45 seconds from 90 seconds
   * Now heals Marine armour
     *  Heals 15 armour per tick
+* ### Infantry Portal
+  * Increased supply cost to 10 from 0
 * ### Observatory
   * Changed build time to 10 seconds from 15 seconds
 * ### Phase Gate
@@ -262,9 +276,16 @@
   * Reduced damage to 7 from 8
   * Lowered spread to 3.2 degrees from 4 degrees
   * Increased structure damage multiplier to 1.25x from 1.0x
+* ### Rifle
+  * Starting ammo now tied to Weapons upgrade level
+    * W0 = 50/100
+    * W1 = 50/150
+    * W2 = 50/200
+    * W3 = 50/200
 * ### Shotgun
   * Damage
-    * Increase Shotgun damage per weapon upgrade to ~13.33 from ~10
+    * Increased Shotgun damage per weapon upgrade to ~13.33 from ~10
+    * Increased base Shotgun damage by 10 damage. ~10.6 damage per pellet from 10 damage per pellet
   * Falloff
     * Falloff start distance increased to 10m from 5m
     * Falloff end distance increased to 20m from 15m
