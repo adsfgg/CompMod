@@ -24,7 +24,7 @@ function Lerk:GetMaxShieldAmount()
 end
 
 
-local kGlideVolumeBoost = 30
+Lerk.kGlideVolumeBoost = 30
 function Lerk:OnCreate()
     InitMixin(self, BaseMoveMixin, { kGravity = Lerk.kGravity })
     InitMixin(self, GroundMoveMixin)
@@ -56,7 +56,7 @@ function Lerk:OnCreate()
         self.flySound:SetParent(self)
         self.flySound:Start()
         -- CompMod: Boost volume
-        self.flySound:SetVolume(kGlideVolumeBoost)
+        self.flySound:SetVolume(Lerk.kGlideVolumeBoost)
         self.flySoundId = self.flySound:GetId()
         
         self.playIdleStartTime = 0
