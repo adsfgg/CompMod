@@ -22,7 +22,11 @@ Reduces volume of Onos moving without Charge
 Reduces volume of Fade metabolize
 
 #Alien.Upgrades.Regeneration
-Reduced from 8% per tick to 6% per tick
+Added per-lifeform Regeneration rates:
+>Vanilla is 8% per tick for all lifeforms
+>Lerk: 6% per tick
+>Fade/Onos/Gorge: 7% per tick
+>Skulks: 8% per tick
 
 #Alien.Upgrades.Vampirism
 No longer triggers from friendly-fire damage

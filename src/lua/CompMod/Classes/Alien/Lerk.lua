@@ -62,3 +62,7 @@ function Lerk:OnCreate()
         self.playIdleStartTime = 0
     end
 end
+
+function Lerk:GetRegenRate()
+    return 0.06
+end

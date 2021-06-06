@@ -9,3 +9,7 @@ function Gorge:GetCrouchSpeedScalar()
 
     return Player.kCrouchSpeedScalar
 end
+
+function Gorge:GetRegenRate()
+    return 0.07
+end

@@ -8,7 +8,7 @@ function Alien:UpdateAutoHeal()
         local maxHealth = self:GetBaseHealth()
         
         if hasRegenUpgrade then
-            healRate = Clamp(kAlienRegenerationPercentage * maxHealth, kAlienMinRegeneration, kAlienMaxRegeneration) * (shellLevel/3)
+            healRate = Clamp(self:GetRegenRate() * maxHealth, kAlienMinRegeneration, kAlienMaxRegeneration) * (shellLevel/3)
         else
             healRate = Clamp(kAlienInnateRegenerationPercentage * maxHealth, kAlienMinInnateRegeneration, kAlienMaxInnateRegeneration) 
         end

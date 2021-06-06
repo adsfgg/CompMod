@@ -55,3 +55,7 @@ function Onos:GetEffectParams(tableParams)
         tableParams[paramLookup[self.stealthLevel]] = true
     end
 end
+
+function Onos:GetRegenRate()
+    return 0.07
+end

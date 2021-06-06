@@ -10,3 +10,7 @@ end
 function Fade:GetHasMetabolizeAnimationDelay()
     return self.timeMetabolize + Fade.kMetabolizeAnimationDelay > Shared.GetTime()
 end
+
+function Fade:GetRegenRate()
+    return 0.07
+end

@@ -30,3 +30,7 @@ function Skulk:ModifyCelerityBonus(celerityBonus)
     
     return celerityBonus 
 end
+
+function Skulk:GetRegenRate()
+    return 0.08
+end
