@@ -14,6 +14,9 @@ AdrenalineRushMixin.networkVars =
 
 local kUpdateRate = 1.0
 
+local kEnzymedThirdpersonMaterialName = "cinematics/vfx_materials/enzyme.material"
+Shared.PrecacheSurfaceShader("cinematics/vfx_materials/enzyme.surface_shader")
+
 function AdrenalineRushMixin:__initmixin()
     
     PROFILE("AdrenalineRushMixin:__initmixin")
@@ -67,6 +70,25 @@ if Server then
     function AdrenalineRushMixin:CopyPlayerDataFrom(player)
         if HasMixin(player, "AdrenalineRush") and player:GetAdrenalineRushLevel() > 0 then
             self:AddTimedCallback(UpdateAdrenalineRushState, kUpdateRate)
+        end
+    end
+end
+
+if Client then
+    function AdrenalineRushMixin:OnUpdate(deltaTime)
+        if self.isAdrenalineRushedClient ~= self.isAdrenalineRushed then
+            local thirdPersonModel = self:GetRenderModel()
+            if thirdPersonModel then
+                if self.isAdrenalineRushed then
+                    self.adrenalineRushedMaterial = AddMaterial(thirdPersonModel, kEnzymedThirdpersonMaterialName)
+                else
+                    if RemoveMaterial(thirdPersonModel, self.adrenalineRushedMaterial) then
+                        self.adrenalineRushedMaterial = nil
+                    end
+                end
+            end
+
+            self.isAdrenalineRushedClient = self.isAdrenalineRushed
         end
     end
 end
