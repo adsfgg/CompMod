@@ -110,6 +110,10 @@ local function GetTechToChange()
 
         [kTechId.Shift] = {
             [kVisualRange] = kEchoRange
+        },
+
+        [kTechId.MAC] = {
+            [kTechDataMaxExtents] = Vector(0.5, 0.1, 0.5)
         }
     }
 end
