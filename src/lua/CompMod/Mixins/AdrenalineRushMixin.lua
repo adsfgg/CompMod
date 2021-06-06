@@ -18,7 +18,6 @@ local kEnzymedThirdpersonMaterialName = "cinematics/vfx_materials/enzyme.materia
 Shared.PrecacheSurfaceShader("cinematics/vfx_materials/enzyme.surface_shader")
 
 function AdrenalineRushMixin:__initmixin()
-    
     PROFILE("AdrenalineRushMixin:__initmixin")
     
     self.adrenalineRushLevel = 0
