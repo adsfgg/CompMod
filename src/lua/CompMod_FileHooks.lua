@@ -33,6 +33,7 @@ ModLoader.SetupFileHook("lua/NS2ConsoleCommands_Server.lua", "lua/CompMod/Consol
 
 -- core
 ModLoader.SetupFileHook("lua/MapEntityLoader.lua", "lua/CompMod/core/MapEntityLoader.lua", "post")
+ModLoader.SetupFileHook("lua/SoundEffect.lua", "lua/CompMod/core/SoundEffect.lua", "post")
 
 -- Damage Files
 ModLoader.SetupFileHook("lua/DamageTypes.lua", "lua/CompMod/Damage/DamageTypes.lua", "post")
