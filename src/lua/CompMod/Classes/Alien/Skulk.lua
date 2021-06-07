@@ -37,3 +37,12 @@ end
 function Skulk:GetRegenRate()
     return 0.08
 end
+
+function Skulk:GetTriggerLandEffect()
+    local xzSpeed = self:GetVelocity():GetLengthXZ()
+    local landEffect = not self.movementModiferState
+    if not GetHasStealthUpgrade(self) and not landEffect then
+        landEffect = xzSpeed > 7
+    end
+    return Alien.GetTriggerLandEffect(self) and landEffect
+end
