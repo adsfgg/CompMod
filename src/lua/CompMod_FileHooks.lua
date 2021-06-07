@@ -12,7 +12,6 @@ ModLoader.SetupFileHook("lua/Embryo.lua", "lua/CompMod/Classes/Alien/Embryo.lua"
 ModLoader.SetupFileHook("lua/Fade_Server.lua", "lua/CompMod/Classes/Alien/Fade_Server.lua", "post")
 ModLoader.SetupFileHook("lua/Fade.lua", "lua/CompMod/Classes/Alien/Fade.lua", "post")
 ModLoader.SetupFileHook("lua/Gorge.lua", "lua/CompMod/Classes/Alien/Gorge.lua", "post")
-ModLoader.SetupFileHook("lua/Lerk_Client.lua", "lua/CompMod/Classes/Alien/Lerk_Client.lua", "post")
 ModLoader.SetupFileHook("lua/Lerk.lua", "lua/CompMod/Classes/Alien/Lerk.lua", "post")
 ModLoader.SetupFileHook("lua/Onos.lua", "lua/CompMod/Classes/Alien/Onos.lua", "post")
 ModLoader.SetupFileHook("lua/Skulk.lua", "lua/CompMod/Classes/Alien/Skulk.lua", "post")
@@ -34,7 +33,6 @@ ModLoader.SetupFileHook("lua/NS2ConsoleCommands_Server.lua", "lua/CompMod/Consol
 
 -- core
 ModLoader.SetupFileHook("lua/MapEntityLoader.lua", "lua/CompMod/core/MapEntityLoader.lua", "post")
-ModLoader.SetupFileHook("lua/SoundEffect.lua", "lua/CompMod/core/SoundEffect.lua", "post")
 
 -- Damage Files
 ModLoader.SetupFileHook("lua/DamageTypes.lua", "lua/CompMod/Damage/DamageTypes.lua", "post")
