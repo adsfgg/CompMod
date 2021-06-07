@@ -1,4 +1,4 @@
-# Changes between CompMod [revision 23 beta 1](revisions/revision23b1.md) and Vanilla Build 336
+# Changes between CompMod [revision 23 beta 2](revisions/revision23b2.md) and Vanilla Build 336
 <br/>
 
 # Alien
@@ -13,7 +13,7 @@
   * When active increases range, output time and speed of nearby PvE
     * Increases range by 25%
     * Increases output time by 10% (Whips attack 10% faster, Crags heal 10% faster, etc)
-    * Increases speed by 1
+    * Increases speed by 0.8
 * ### Bonewall
   * Bonewall is no longer flammable
 
@@ -99,14 +99,12 @@
 * Additional healing after soft cap increased to 80% reduction from 66%
 
 ## Lerk
-* ### Glide
-  * The Glide sound effect is now 30x louder (for testing purposes)
 * ### Health
   * Lowered base Lerk health to 170 from 180
 * ### Movement
   * Increase strafe force to 8.3 from 7
   * Air friction value remains equal to vanilla friction (0.08) for 0.64 seconds after flapping
-  * After 0.75 seconds, friction is scaled linearly from 0.08 to 0.5 over 3.25 seconds (total of 4 seconds)
+  * After 0.75 seconds, friction is scaled linearly from 0.08 to 0.5 over 2.25 seconds (total of 3 seconds)
   * This change minimizes the effectiveness of silent Lerk ambushes. A lerk will have to flap in order to quickly catch a marine
   * Lerk movement mid-flight while flapping often is unaffected
 * ### Spikes
@@ -172,10 +170,13 @@
     * Skulks: 8% per tick
 * ### Stealth
   * Replaces Focus
-  * Skulk/Gorge sneak speed increased
-  * Silences Lerk glide sound
-  * Reduces volume of Onos moving without Charge
-  * Reduces volume of Fade metabolize
+  * Skulk, Lerk and Fade sneak speed increased by 0.3 per veil
+  * Gorge sneak speed increased by 0.5 per veil
+  * Volume of Onos movement while crouching decreased by 33% per veil. 3 veils will make a crouching Onos silent.
+  * Reduces volume of certain lifeform abilities by 50%
+    * Lerk: Flap sound
+    * Fade: Metabolize sound
+    * Onos: Rumble sound, charge sound
 * ### Vampirism
   * No longer triggers from friendly-fire damage
   * Works against exosuits
