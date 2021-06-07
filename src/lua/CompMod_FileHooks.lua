@@ -37,10 +37,6 @@ ModLoader.SetupFileHook("lua/MapEntityLoader.lua", "lua/CompMod/core/MapEntityLo
 -- Damage Files
 ModLoader.SetupFileHook("lua/DamageTypes.lua", "lua/CompMod/Damage/DamageTypes.lua", "post")
 
--- Effects
-ModLoader.SetupFileHook("lua/EffectsGlobals.lua", "lua/CompMod/Effects/EffectsGlobals.lua", "post")
-ModLoader.SetupFileHook("lua/PlayerEffects.lua", "lua/CompMod/Effects/PlayerEffects.lua", "post")
-
 -- Alien Entities
 ModLoader.SetupFileHook("lua/AlienTeamInfo.lua", "lua/CompMod/Entities/Alien/AlienTeamInfo.lua", "post")
 ModLoader.SetupFileHook("lua/AlienTunnelManager.lua", "lua/CompMod/Entities/Alien/AlienTunnelManager.lua", "post")

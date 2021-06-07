@@ -165,7 +165,7 @@ kSkulkStealthWalkSpeedIncrease = 1
 kGorgeStealthWalkSpeedIncrease = 1.5
 kLerkStealthWalkSpeedIncrease = 1
 kFadeStealthWalkSpeedIncrease = 1
-kStealthVolumeReduction = 0.5 -- IMPORTANT: Make sure this is the same as in PlayerEffects.lua
+kStealthVolumeReduction = 0.5
 
 kInfantryPortalSupply = 10 --0 
 

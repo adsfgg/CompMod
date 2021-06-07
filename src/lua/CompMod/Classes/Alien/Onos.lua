@@ -44,18 +44,39 @@ function Onos:UpdateRumbleSound()
     end
 end
 
+function Onos:GetRegenRate()
+    return 0.07
+end
 
-local paramLookup = {
-    kEffectFilterStealthLevelOne,
-    kEffectFilterStealthLevelTwo,
-    kEffectFilterStealthLevelThree,
-}
-function Onos:GetEffectParams(tableParams)
-    if self.stealthLevel > 0 then
-        tableParams[paramLookup[self.stealthLevel]] = true
+function Onos:TriggerCharge(move)
+    if not self.charging and self:GetHasMovementSpecial() and self.timeLastChargeEnd + Onos.kChargeDelay < Shared.GetTime() 
+    and self:GetIsOnGround() and not self:GetCrouching() and not self:GetIsBoneShieldActive() then
+        self.charging = true
+        self.timeLastCharge = Shared.GetTime()
+        
+        -- if Server and (GetHasSilenceUpgrade(self) and self:GetVeilLevel() == 0) or not GetHasSilenceUpgrade(self) then
+        -- Only run on server if you have silence? lol
+        local effectParams = {}
+        if GetHasStealthUpgrade(self) then
+            effectParams[kEffectParamVolume] = 1 - (kStealthVolumeReduction / 3 * self.stealthLevel)
+        end
+        self:TriggerEffects("onos_charge", effectParams)
+        --end
+        
+        self:TriggerUncloak()
     end
 end
 
-function Onos:GetRegenRate()
-    return 0.07
+if Client then
+    function Onos:TriggerFootstep()
+        self.leftFoot = not self.leftFoot
+        local sprinting = HasMixin(self, "Sprint") and self:GetIsSprinting()
+        local viewVec = self:GetViewAngles():GetCoords().zAxis
+        local forward = self:GetVelocity():DotProduct(viewVec) > -0.1
+        local crouch = HasMixin(self, "CrouchMove") and self:GetCrouching()
+        local localPlayer = Client.GetLocalPlayer()
+        local enemy = localPlayer and GetAreEnemies(self, localPlayer)
+        local volume = crouch and 1 - (self.stealthLevel / 3) or 1
+        self:TriggerEffects("footstep", {volume = volume, surface = self:GetMaterialBelowPlayer(), left = self.leftFoot, sprinting = sprinting, forward = forward, crouch = crouch, enemy = enemy})
+    end
 end
