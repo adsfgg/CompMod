@@ -1,4 +1,4 @@
-local kStealthVolumeReduction = 1.0 -- IMPORTANT: Make sure this is the same as in Balance.lua
+local kStealthVolumeReduction = 0.5 -- IMPORTANT: Make sure this is the same as in Balance.lua
 
 local effectsTable = kPlayerEffectData["footstep"]["footstepSoundEffects"] 
 

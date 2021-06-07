@@ -161,8 +161,11 @@ kFadeArmorFullyUpgradedAmount = kFadeArmor + 40 --40
 kOnosArmorFullyUpgradedAmount = kOnosArmor + 80 --200
 
 kMetabolizeEnergyCost = 20 --25
-kStealthSneakModifier = 0.3
-kStealthVolumeReduction = 1.0 -- IMPORTANT: Make sure this is the same as in PlayerEffects.lua
+kSkulkStealthWalkSpeedIncrease = 1
+kGorgeStealthWalkSpeedIncrease = 1.5
+kLerkStealthWalkSpeedIncrease = 1
+kFadeStealthWalkSpeedIncrease = 1
+kStealthVolumeReduction = 0.5 -- IMPORTANT: Make sure this is the same as in PlayerEffects.lua
 
 kInfantryPortalSupply = 10 --0 
 

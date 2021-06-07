@@ -63,7 +63,7 @@ Revision 23 beta 1
     * Skulks: 8% per tick
   * Re-added heal effect (visual and audio)
 * Stealth
-  * Replaces Focus
+  * Replaces Neurotoxin
   * Skulk/Gorge sneak speed increased
   * Silences Lerk glide sound
   * Reduces volume of Onos moving without Charge

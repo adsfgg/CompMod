@@ -66,3 +66,21 @@ end
 function Lerk:GetRegenRate()
     return 0.06
 end
+
+local kMaxSpeed = debug.getupvaluex(Lerk.GetMaxSpeed, "kMaxSpeed")
+local kMaxWalkSpeed = debug.getupvaluex(Lerk.GetMaxSpeed, "kMaxWalkSpeed")
+function Lerk:GetMaxSpeed(possible)
+    if possible then
+        return kMaxWalkSpeed
+    end
+    
+    if self:GetIsOnGround() then
+        if GetHasStealthUpgrade(self) then
+            return kMaxWalkSpeed + (kLerkStealthWalkSpeedIncrease * 3 / self:GetVeilLevel())
+        else
+            return kMaxWalkSpeed
+        end
+    else
+        return kMaxSpeed
+    end     
+end

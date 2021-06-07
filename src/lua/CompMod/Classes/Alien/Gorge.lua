@@ -3,11 +3,15 @@ function Gorge:GetMaxShieldAmount()
 end
 
 function Gorge:GetCrouchSpeedScalar()
+    local baseModifier = Player.kCrouchSpeedScalar
+
     if GetHasStealthUpgrade(self) then
-        return Player.kCrouchSpeedScalar - (Player.kCrouchSpeedScalar * (kStealthSneakModifier / 3) * self:GetVeilLevel())
+        local baseSpeed = Gorge.kMaxGroundSpeed
+        local target = baseSpeed * baseModifier + (kGorgeStealthWalkSpeedIncrease * 3 / self:GetVeilLevel())
+        return 1 - (target / baseSpeed)
     end
 
-    return Player.kCrouchSpeedScalar
+    return baseModifier
 end
 
 function Gorge:GetRegenRate()

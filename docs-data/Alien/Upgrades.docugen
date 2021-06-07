@@ -16,10 +16,11 @@ Lowered Onos carapace armour to 80 from 200
 
 #Alien.Upgrades.Stealth
 Replaces Focus
-Skulk/Gorge sneak speed increased 
+Skulk, Lerk and Fade sneak speed increased by 0.3 per veil
+Gorge sneak speed increased by 0.5 per veil
 Silences Lerk glide sound
-Reduces volume of Onos moving without Charge
-Reduces volume of Fade metabolize
+Reduces volume of Onos moving without Charge by 50%
+Reduces volume of Fade metabolize by 50%
 
 #Alien.Upgrades.Regeneration
 Added per-lifeform Regeneration rates:
