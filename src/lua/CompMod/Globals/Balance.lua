@@ -138,7 +138,7 @@ kAlienStructureOutOfCombatMoveScalar = 1.10
 
 kAdrenalineRushRangeScalar = 0.25
 kAdrenalineRushIntervalScalar = 0.1
-kAdrenalineRushSpeedIncrease = 1
+kAdrenalineRushSpeedIncrease = 0.8
 
 kLerkHealth = 170 -- 180
 
