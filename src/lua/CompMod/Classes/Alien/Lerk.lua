@@ -4,10 +4,10 @@ Lerk.kFlapForceStrafe = 8.3
 Lerk.kMinAirFriction = 0.08
 
 -- High max friction value
-Lerk.kMaxAirFriction = 0.5
+Lerk.kMaxAirFriction = 0.6
 
 -- Reach full friction in this many seconds
-Lerk.timeToFullFriction = 2.25
+Lerk.timeToFullFriction = 1.75
 
 -- Time before friction is higher than vanilla
 Lerk.flapGracePeriod = 0.75
