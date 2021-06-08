@@ -7,7 +7,7 @@ function Gorge:GetCrouchSpeedScalar()
 
     if GetHasStealthUpgrade(self) then
         local baseSpeed = Gorge.kMaxGroundSpeed
-        local target = baseSpeed * baseModifier + (kGorgeStealthWalkSpeedIncrease * 3 / self:GetVeilLevel())
+        local target = baseSpeed * baseModifier + (kGorgeStealthWalkSpeedIncrease / 3 * self.stealthLevel)
         return 1 - (target / baseSpeed)
     end
 

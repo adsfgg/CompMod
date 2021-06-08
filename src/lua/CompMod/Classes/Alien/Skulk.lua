@@ -6,7 +6,7 @@ local sneakModifier = 0.5931035
 function Skulk:GetSneakSpeedModifier()
     if GetHasStealthUpgrade(self) then
         local baseSpeed = Skulk.kMaxSpeed
-        local target = baseSpeed * sneakModifier + (kSkulkStealthWalkSpeedIncrease * 3 / self:GetVeilLevel())
+        local target = baseSpeed * sneakModifier + (kSkulkStealthWalkSpeedIncrease / 3 * self.stealthLevel)
         return target / baseSpeed
     end
     

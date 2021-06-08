@@ -36,7 +36,7 @@ function Lerk:GetMaxSpeed(possible)
     
     if self:GetIsOnGround() then
         if GetHasStealthUpgrade(self) then
-            return kMaxWalkSpeed + (kLerkStealthWalkSpeedIncrease * 3 / self:GetVeilLevel())
+            return kMaxWalkSpeed + (kLerkStealthWalkSpeedIncrease / 3 * self.stealthLevel)
         else
             return kMaxWalkSpeed
         end
