@@ -37,7 +37,17 @@ function Onos:UpdateRumbleSound()
 
     if Server then
         if GetHasStealthUpgrade(self) then
-            self.rumbleSound:SetVolume(1 - (kStealthVolumeReduction / 3 * self.stealthLevel))
+            local volume = self:GetCrouching() and 0 or (1 - (kStealthVolumeReduction / 3 * self.stealthLevel))
+            if self:GetCrouching() then
+                volume = 0
+            else
+                volume = 1 - (kStealthVolumeReduction / 3 * self.stealthLevel)
+            end
+            
+            self.rumbleSound:SetVolume(volume)
+            if volume == 0 then
+                self.rumbleSound:Stop()
+            end
         else
             self.rumbleSound:SetVolume(1)
         end
