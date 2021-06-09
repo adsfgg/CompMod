@@ -74,6 +74,7 @@ ModLoader.SetupFileHook("lua/BabblerOwnerMixin.lua", "lua/CompMod/Mixins/Babbler
 ModLoader.SetupFileHook("lua/CatPackMixin.lua", "lua/CompMod/Mixins/CatPackMixin.lua", "post")
 ModLoader.SetupFileHook("lua/CloakableMixin.lua", "lua/CompMod/Mixins/CloakableMixin.lua", "post")
 ModLoader.SetupFileHook("lua/DamageMixin.lua", "lua/CompMod/Mixins/DamageMixin.lua", "post")
+ModLoader.SetupFileHook("lua/Weapons/Alien/HealSprayMixin.lua", "lua/CompMod/Mixins/HealSprayMixin.lua", "post") -- why is this in weapons/alien????
 ModLoader.SetupFileHook("lua/MapBlipMixin.lua", "lua/CompMod/Mixins/MapBlipMixin.lua", "post")
 ModLoader.SetupFileHook("lua/MucousableMixin.lua", "lua/CompMod/Mixins/MucousableMixin.lua", "post")
 ModLoader.SetupFileHook("lua/NanoShieldMixin.lua", "lua/CompMod/Mixins/NanoShieldMixin.lua", "post")
