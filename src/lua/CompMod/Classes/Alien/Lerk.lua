@@ -108,3 +108,5 @@ local function UpdateFlap(self, input, velocity)
         end
     end
 end
+
+debug.setupvaluex(Lerk.ModifyVelocity, "UpdateFlap", UpdateFlap)
