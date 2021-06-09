@@ -1,4 +1,4 @@
-# Changes between CompMod [revision 23 beta 2](revisions/revision23b2.md) and Vanilla Build 336
+# Changes between CompMod [revision 23 beta 3](revisions/revision23b3.md) and Vanilla Build 336
 <br/>
 
 # Alien
@@ -103,8 +103,8 @@
   * Lowered base Lerk health to 170 from 180
 * ### Movement
   * Increase strafe force to 8.3 from 7
-  * Air friction value remains equal to vanilla friction (0.08) for 0.64 seconds after flapping
-  * After 0.75 seconds, friction is scaled linearly from 0.08 to 0.5 over 2.25 seconds (total of 3 seconds)
+  * Air friction value remains equal to vanilla friction (0.08) for 0.75 seconds after flapping
+  * After 0.75 seconds, friction is scaled linearly from 0.08 to 0.6 over 1.75 seconds (total of 2.5 seconds)
   * This change minimizes the effectiveness of silent Lerk ambushes. A lerk will have to flap in order to quickly catch a marine
   * Lerk movement mid-flight while flapping often is unaffected
 * ### Spikes
