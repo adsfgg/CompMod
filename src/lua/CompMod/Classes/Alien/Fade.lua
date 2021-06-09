@@ -20,7 +20,7 @@ end
 function Fade:ModifyCrouchAnimation(crouchAmount)    
     local maxSpeed = kMaxSpeed
     if GetHasStealthUpgrade(self) then
-        maxSpeed = maxSpeed + (kFadeStealthWalkSpeedIncrease / 3 * self.stealthLevel)
+        maxSpeed = maxSpeed + (kFadeStealthWalkSpeedIncrease * self.stealthLevel)
     end
 
     return Clamp(crouchAmount * (1 - ( (self:GetVelocityLength() - maxSpeed) / (maxSpeed * 0.5))), 0, 1)
@@ -31,7 +31,7 @@ function Fade:GetCrouchSpeedScalar()
 
     if GetHasStealthUpgrade(self) then
         local baseSpeed = kMaxSpeed
-        local target = baseSpeed * baseModifier + (kFadeStealthWalkSpeedIncrease / 3 * self.stealthLevel)
+        local target = baseSpeed * baseModifier + (kFadeStealthWalkSpeedIncrease * self.stealthLevel)
         return 1 - (target / baseSpeed)
     end
 

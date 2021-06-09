@@ -161,11 +161,13 @@ kFadeArmorFullyUpgradedAmount = kFadeArmor + 40 --40
 kOnosArmorFullyUpgradedAmount = kOnosArmor + 80 --200
 
 kMetabolizeEnergyCost = 20 --25
-kSkulkStealthWalkSpeedIncrease = 1
-kGorgeStealthWalkSpeedIncrease = 1.5
-kLerkStealthWalkSpeedIncrease = 1
-kFadeStealthWalkSpeedIncrease = 1
-kStealthVolumeReduction = 0.5
+
+-- All per veil
+kSkulkStealthWalkSpeedIncrease = 1 / 3
+kGorgeStealthWalkSpeedIncrease = 1.5 / 3
+kLerkStealthWalkSpeedIncrease = 1 / 3
+kFadeStealthWalkSpeedIncrease = 1 / 3
+kStealthVolumeReduction = 0.5 / 3
 
 kInfantryPortalSupply = 10 --0 
 

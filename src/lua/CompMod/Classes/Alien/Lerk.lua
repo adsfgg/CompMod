@@ -27,25 +27,18 @@ function Lerk:GetRegenRate()
     return 0.06
 end
 
-local kMaxSpeed = debug.getupvaluex(Lerk.GetMaxSpeed, "kMaxSpeed")
 local kMaxWalkSpeed = debug.getupvaluex(Lerk.GetMaxSpeed, "kMaxWalkSpeed")
-function Lerk:GetMaxSpeed(possible)
-    if possible then
-        return kMaxWalkSpeed
+function Lerk:GetCrouchSpeedScalar()
+    local baseModifier = Player.kCrouchSpeedScalar
+
+    if GetHasStealthUpgrade(self) then
+        local baseSpeed = kMaxWalkSpeed
+        local target = baseSpeed * baseModifier + (kLerkStealthWalkSpeedIncrease * self.stealthLevel)
+        return 1 - (target / baseSpeed)
     end
-    
-    if self:GetIsOnGround() then
-        if GetHasStealthUpgrade(self) then
-            return kMaxWalkSpeed + (kLerkStealthWalkSpeedIncrease / 3 * self.stealthLevel)
-        else
-            return kMaxWalkSpeed
-        end
-    else
-        return kMaxSpeed
-    end     
+
+    return baseModifier
 end
-
-
 
 local function UpdateFlap(self, input, velocity)
     local flapPressed = bit.band(input.commands, Move.Jump) ~= 0
@@ -108,7 +101,7 @@ local function UpdateFlap(self, input, velocity)
 
             local effectParams = {}
             if GetHasStealthUpgrade(self) then
-                effectParams[kEffectParamVolume] = 1 - (kStealthVolumeReduction / 3 * self.stealthLevel)
+                effectParams[kEffectParamVolume] = 1 - (kStealthVolumeReduction * self.stealthLevel)
             end
 
             self:TriggerEffects("flap", effectParams)

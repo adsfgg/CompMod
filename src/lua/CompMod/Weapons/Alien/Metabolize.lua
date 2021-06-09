@@ -11,7 +11,7 @@ function Metabolize:OnTag(tagName)
             
             local effectParams = {}
             if GetHasStealthUpgrade(player) then
-                effectParams[kEffectParamVolume] = 1 - (kStealthVolumeReduction / 3 * player.stealthLevel)
+                effectParams[kEffectParamVolume] = 1 - (kStealthVolumeReduction * player.stealthLevel)
             end
 
             player:TriggerEffects("metabolize", effectParams)

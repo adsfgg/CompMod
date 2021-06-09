@@ -37,11 +37,11 @@ function Onos:UpdateRumbleSound()
 
     if Server then
         if GetHasStealthUpgrade(self) then
-            local volume = self:GetCrouching() and 0 or (1 - (kStealthVolumeReduction / 3 * self.stealthLevel))
+            local volume = self:GetCrouching() and 0 or (1 - (kStealthVolumeReduction * self.stealthLevel))
             if self:GetCrouching() then
                 volume = 0
             else
-                volume = 1 - (kStealthVolumeReduction / 3 * self.stealthLevel)
+                volume = 1 - (kStealthVolumeReduction * self.stealthLevel)
             end
             
             self.rumbleSound:SetVolume(volume)
@@ -68,7 +68,7 @@ function Onos:TriggerCharge(move)
         -- Only run on server if you have silence? lol
         local effectParams = {}
         if GetHasStealthUpgrade(self) then
-            effectParams[kEffectParamVolume] = 1 - (kStealthVolumeReduction / 3 * self.stealthLevel)
+            effectParams[kEffectParamVolume] = 1 - (kStealthVolumeReduction * self.stealthLevel)
         end
         self:TriggerEffects("onos_charge", effectParams)
         --end
