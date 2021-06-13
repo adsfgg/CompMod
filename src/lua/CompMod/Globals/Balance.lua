@@ -167,7 +167,9 @@ kSkulkStealthWalkSpeedIncrease = 1 / 3
 kGorgeStealthWalkSpeedIncrease = 1.5 / 3
 kLerkStealthWalkSpeedIncrease = 1 / 3
 kFadeStealthWalkSpeedIncrease = 1 / 3
+
 kStealthVolumeReduction = 0.5 / 3
+kStealthMetabolizeVolumeReduction = 1.0 / 3
 
 kInfantryPortalSupply = 10 --0 
 
