@@ -4,7 +4,7 @@ local kUpgradeStructureTable =
         name = "Shell",
         techId = kTechId.Shell,
         upgrades = {
-            kTechId.Vampirism, kTechId.None, kTechId.Regeneration
+            kTechId.Vampirism, kTechId.Carapace, kTechId.Regeneration
         }
     },
     {
