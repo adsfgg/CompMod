@@ -1,9 +1,9 @@
 local kCompModRevisionKey = "compmod_revision"
 local kCompModBetaRevisionKey = "compmod_betarevision"
-local kChangelogTitle = "NSL Competitive Mod"
-local kChangelogURL = "https://enslcompmod.github.io/CompMod/changelog"
-local kChangelogDetailURL = "https://enslcompmod.github.io/CompMod/revisions/revision" .. g_compModRevision .. ".html"
-local kBetaChangelogURL = "https://adsfgg.github.io/CompMod/changelog"
+local kChangeLogTitle = "NSL Competitive Mod"
+local kChangeLogURL = "https://enslcompmod.github.io/CompMod/changelog"
+local kChangeLogDetailURL = "https://enslcompmod.github.io/CompMod/revisions/revision" .. g_compModRevision .. ".html"
+local kBetaChangeLogURL = "https://adsfgg.github.io/CompMod/changelog"
 local kBetaChangeLogDetailURL = string.format("https://adsfgg.github.io/CompMod/revisions/revision%sb%s.html", g_compModRevision, g_compModBeta)
 
 local function showChangeLog(withDetail)
@@ -14,7 +14,7 @@ local function showChangeLog(withDetail)
         if isBeta then
             url = kBetaChangeLogDetailURL
         else
-            url = kChangelogDetailURL
+            url = kChangeLogDetailURL
         end
     else
         if isBeta then
@@ -25,7 +25,7 @@ local function showChangeLog(withDetail)
     end
 
     if Shine then
-        Shine:OpenWebpage(url, kChangelogTitle)
+        Shine:OpenWebpage(url, kChangeLogTitle)
     elseif Client.GetIsSteamOverlayEnabled() then
         Client.ShowWebpage(url)
     else
