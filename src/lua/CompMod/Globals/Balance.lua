@@ -155,7 +155,7 @@ kMACOutOfCombatSpeedScalar = 1.15 -- 15%
 kGorgeHealth = 190 -- 160
 
 kSkulkArmorFullyUpgradedAmount = kSkulkArmor + 10 --15
-kGorgeArmorFullyUpgradedAmount = kGorgeArmor + 20 --25
+kGorgeArmorFullyUpgradedAmount = kGorgeArmor + 15 --25
 kLerkArmorFullyUpgradedAmount = kLerkArmor + 15 --20
 kFadeArmorFullyUpgradedAmount = kFadeArmor + 40 --40
 kOnosArmorFullyUpgradedAmount = kOnosArmor + 80 --200
