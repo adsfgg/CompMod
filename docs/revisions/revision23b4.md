@@ -23,7 +23,7 @@ Revision 23 beta 4
 * Carapace
   * Lowered Gorge carapace armour to 15 from 20
 * Stealth
-  * Lowered Metabolize volume reduction to 100% from 50%
+  * Increased Metabolize volume reduction to 100% from 50%
   * Stealth now reduces HealSpray volume by 50%
 
 ## Marine
