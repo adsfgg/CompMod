@@ -3,7 +3,7 @@ Removed additional energy pool from Adrenaline
 
 #Alien.Upgrades.Aura
 Max range decreased to 24 from 30 (to 8 per veil from 10 per veil)
-Only shows HP value on parasited players
+No longer shows player HP
 
 #Alien.Upgrades.Camouflage
 No longer fully cloaked while moving
