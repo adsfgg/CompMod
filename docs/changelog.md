@@ -1,4 +1,4 @@
-# Changes between CompMod [revision 23 beta 3](revisions/revision23b3.md) and Vanilla Build 336
+# Changes between CompMod [revision 23 beta 4](revisions/revision23b4.md) and Vanilla Build 336
 <br/>
 
 # Alien
@@ -154,12 +154,12 @@
   * Removed additional energy pool from Adrenaline
 * ### Aura
   * Max range decreased to 24 from 30 (to 8 per veil from 10 per veil)
-  * Only shows HP value on parasited players
+  * No longer shows player HP
 * ### Camouflage
   * No longer fully cloaked while moving
 * ### Carapace
   * Lowered Skulk carapace armour to 10 from 15
-  * Lowered Gorge carapace armour to 20 from 25
+  * Lowered Gorge carapace armour to 15 from 25
   * Lowered Lerk carapace armour to 15 from 20
   * Lowered Onos carapace armour to 80 from 200
 * ### Regeneration
@@ -173,10 +173,11 @@
   * Skulk, Lerk and Fade sneak speed increased by 0.3 per veil
   * Gorge sneak speed increased by 0.5 per veil
   * Volume of Onos movement while crouching decreased by 33% per veil. 3 veils will make a crouching Onos silent.
-  * Reduces volume of certain lifeform abilities by 50%
-    * Lerk: Flap sound
-    * Fade: Metabolize sound
-    * Onos: Rumble sound, charge sound
+  * Reduces volume of certain lifeform abilities:
+    * Gorge: Heal Spray by 50%
+    * Lerk: Flap sound by 50%
+    * Fade: Metabolize sound by 100%
+    * Onos: Rumble sound, charge sound by 50%
 * ### Vampirism
   * No longer triggers from friendly-fire damage
   * Works against exosuits
@@ -198,6 +199,10 @@
   * Research cost 15 tres
   * Research time 30 seconds
   * Unlocks Flamethrower and Grenade Launcher to purchase from the Advanced Armory
+
+## Infantry Portal
+* Only 2 IPs can be powered at once
+* A 3rd IP can be built but needs to be PowerSurged to activate
 
 ## Jetpacks
 * Increased drop cost for Commanders to 20 tres from 15 tres
@@ -351,7 +356,7 @@
 * Fixed that if a MAC is doing something when idle (automatic weld order, or build order) and the command ask the mac to move elsewhere, then the mac will return to the origin location after reaching the location - Thanks Katz!
 
 ## Minimap
-* Fixed that enemy structures would not pulse red when under attack (experimental)
+* Fixed that enemy structures would not pulse red when under attack
 * Fixed a vanilla bug that would render the Marine minimap over status icons
   * See: https://youtu.be/_8OmfC79-jc
 
