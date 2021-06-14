@@ -1,4 +1,4 @@
 #Fixes & Improvements.Minimap
-Fixed that enemy structures would not pulse red when under attack (experimental)
+Fixed that enemy structures would not pulse red when under attack
 Fixed a vanilla bug that would render the Marine minimap over status icons
 >See: https://youtu.be/_8OmfC79-jc
