@@ -40,3 +40,7 @@ function CommandStation:CreateInitialMAC()
         until false
     end
 end
+
+function CommandStation:GetNumAttachedInfantryPortals()
+    return #GetEntitiesForTeamWithinRange("InfantryPortal", self:GetTeamNumber(), self:GetOrigin(), 15)
+end
