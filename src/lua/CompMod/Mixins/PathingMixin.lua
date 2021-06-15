@@ -6,5 +6,5 @@ function PathingMixin:MoveToTarget(physicsGroupMask, endPoint, movespeed, time)
         return false
     end
 
-    oldMoveToTarget(self, physicsGroupMask, endPoint, movespeed, time)
+    return oldMoveToTarget(self, physicsGroupMask, endPoint, movespeed, time)
 end
