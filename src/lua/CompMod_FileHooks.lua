@@ -142,6 +142,7 @@ ModLoader.SetupFileHook("lua/MAC.lua", "lua/CompMod/Units/Marine/MAC.lua", "post
 ModLoader.SetupFileHook("lua/Alien_Upgrade.lua", "lua/CompMod/Upgrades/Alien_Upgrade.lua", "post")
 
 -- Alien Weapons
+ModLoader.SetupFileHook("lua/Weapons/Alien/Ability.lua", "lua/CompMod/Weapons/Alien/Ability.lua", "post")
 ModLoader.SetupFileHook("lua/Weapons/Alien/BoneShield.lua", "lua/CompMod/Weapons/Alien/BoneShield.lua", "post")
 ModLoader.SetupFileHook("lua/Weapons/Alien/DropStructureAbility.lua", "lua/CompMod/Weapons/Alien/DropStructureAbility.lua", "post")
 ModLoader.SetupFileHook("lua/Weapons/Alien/Metabolize.lua", "lua/CompMod/Weapons/Alien/Metabolize.lua", "post")

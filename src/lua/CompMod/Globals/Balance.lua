@@ -170,6 +170,7 @@ kFadeStealthWalkSpeedIncrease = 1 / 3
 
 kStealthVolumeReduction = 0.5 / 3
 kStealthMetabolizeVolumeReduction = 1.0 / 3
+kStealthLocalVolumeReduction = 0.8 / 3
 
 kInfantryPortalSupply = 10 --0 
 
