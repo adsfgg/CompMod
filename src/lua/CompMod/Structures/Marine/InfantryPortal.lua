@@ -1,7 +1,7 @@
 local kAnimationGraph = PrecacheAsset("models/marine/infantry_portal/infantry_portal.animation_graph")
 local kUpdateRate = 0.25
-local netvars = {
-    powerDisabled = "private boolean"
+local networkVars = {
+    powerDisabled = "boolean"
 }
 
 local function PushPlayers(self)
@@ -108,6 +108,40 @@ function InfantryPortal:GetAttachedCommandStation()
     end
 
     return nil
+end
+
+function InfantryPortal:GetTechButtons()
+    return {
+        kTechId.SetRally, kTechId.SpawnMarine, kTechId.IPSurge, kTechId.None, 
+        kTechId.None, kTechId.None, kTechId.None, kTechId.None,     
+    } 
+end
+
+function InfantryPortal:PerformActivation(techId, position, normal, commander)
+    if techId == kTechId.IPSurge then
+        if self.powerDisabled or not self.powered then
+            Shared.PlayPrivateSound(self, MarineCommander.kTriggerNanoShieldSound, nil, 1.0, self:GetOrigin())
+            self:SetPowerSurgeDuration(kPowerSurgeDuration)
+
+            commander:SetTechCooldown(techId, kPowerSurgeCooldown, Shared.GetTime())
+            local msg = BuildAbilityResultMessage(techId, true, Shared.GetTime())
+            Server.SendNetworkMessage(commander, "AbilityResult", msg, false)
+
+            commander:SetTechCooldown(kTechId.PowerSurge, kPowerSurgeCooldown, Shared.GetTime())
+            local msg = BuildAbilityResultMessage(kTechId.PowerSurge, true, Shared.GetTime())
+            Server.SendNetworkMessage(commander, "AbilityResult", msg, false)
+        else
+            commander:TriggerInvalidSound()
+        end
+    end
+end
+
+function InfantryPortal:GetActivationTechAllowed(techId)
+    if techId == kTechId.IPSurge then
+        return self.powerDisabled
+    end
+    
+    return true
 end
 
 Shared.LinkClassToMap("InfantryPortal", InfantryPortal.kMapName, networkVars, true)

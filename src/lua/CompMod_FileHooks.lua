@@ -4,6 +4,8 @@ g_compModBeta = 4
 -- Alien Buy
 ModLoader.SetupFileHook("lua/AlienBuy_Client.lua", "lua/CompMod/Buy/Alien/AlienBuy_Client.lua", "post")
 
+-- Classes
+ModLoader.SetupFileHook("lua/ScriptActor.lua", "lua/CompMod/Classes/ScriptActor.lua", "post")
 -- Alien Classes
 ModLoader.SetupFileHook("lua/Alien_Client.lua", "lua/CompMod/Classes/Alien/Alien_Client.lua", "post")
 ModLoader.SetupFileHook("lua/Alien_Server.lua", "lua/CompMod/Classes/Alien/Alien_Server.lua", "post")
@@ -21,6 +23,7 @@ ModLoader.SetupFileHook("lua/Commander_Client.lua", "lua/CompMod/Classes/Command
 ModLoader.SetupFileHook("lua/Exo.lua", "lua/CompMod/Classes/Marine/Exo.lua", "post")
 ModLoader.SetupFileHook("lua/Marine_Server.lua", "lua/CompMod/Classes/Marine/Marine_Server.lua", "post")
 ModLoader.SetupFileHook("lua/Marine.lua", "lua/CompMod/Classes/Marine/Marine.lua", "post")
+ModLoader.SetupFileHook("lua/MarineCommander_Server.lua", "lua/CompMod/Classes/Marine/MarineCommander_Server.lua", "post")
 -- Player Classes
 ModLoader.SetupFileHook("lua/Player_Client.lua", "lua/CompMod/Classes/Player/Player_Client.lua", "post")
 

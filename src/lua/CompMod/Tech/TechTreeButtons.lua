@@ -4,7 +4,8 @@ local toAdd = {
     {kTechId.AdrenalineRush, 47},
     {kTechId.AdvancedSwipe, 105},
     {kTechId.Stealth, 65},
-    {kTechId.DemolitionsTech, 140}
+    {kTechId.DemolitionsTech, 140},
+    {kTechId.IPSurge, 119}
 }
 
 local toChange = {}

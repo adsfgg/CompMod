@@ -3,6 +3,7 @@ local newTechIds = {
     "AdvancedSwipe",
     "DemolitionsTech",
     "Stealth",
+    "IPSurge",
     
     -- Gorge Tunnel menus
     "GorgeTunnelMenu",

@@ -85,7 +85,16 @@ local function GetTechToAdd()
             [kTechDataCooldown] = 10,
             [kTechDataCostKey] = 3,
             [kTechDataOneAtATime] = true,
-        }
+        },
+
+        {
+            [kTechDataId] = kTechId.IPSurge,
+            [kTechDataCooldown] = kPowerSurgeCooldown,
+            [kTechDataDisplayName] = "POWER_SURGE",
+            [kTechDataCostKey] = kPowerSurgeCost,
+            [kTechDataTooltipInfo] = "POWER_SURGE_TOOLTIP",
+            [kTechDataOneAtATime] = true,
+        },
     }
 end
 

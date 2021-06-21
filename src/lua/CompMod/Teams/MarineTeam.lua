@@ -46,6 +46,8 @@ function MarineTeam:InitTechTree()
 
     self.techTree:AddAction(kTechId.SelectObservatory)
 
+    self.techTree:AddActivation(kTechId.IPSurge, kTechId.InfantryPortal, kTechId.AdvancedMarineSupport)
+
     -- Armory upgrades
     self.techTree:AddUpgradeNode(kTechId.AdvancedArmoryUpgrade,  kTechId.Armory)
 
