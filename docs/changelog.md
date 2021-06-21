@@ -1,4 +1,4 @@
-# Changes between CompMod [revision 23 beta 4](revisions/revision23b4.md) and Vanilla Build 336
+# Changes between CompMod [revision 23 beta 5](revisions/revision23b5.md) and Vanilla Build 336
 <br/>
 
 # Alien
@@ -172,6 +172,7 @@
   * Replaces Focus
   * Skulk, Lerk and Fade sneak speed increased by 0.3 per veil
   * Gorge sneak speed increased by 0.5 per veil
+  * Reduces client side attack sounds by 80%
   * Volume of Onos movement while crouching decreased by 33% per veil. 3 veils will make a crouching Onos silent.
   * Reduces volume of certain lifeform abilities:
     * Gorge: Heal Spray by 50%
@@ -203,6 +204,7 @@
 ## Infantry Portal
 * Only 2 IPs can be powered at once
 * A 3rd IP can be built but needs to be PowerSurged to activate
+* A Power Surge action has been added to the unpowered IP
 
 ## Jetpacks
 * Increased drop cost for Commanders to 20 tres from 15 tres
